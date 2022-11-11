@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/send-msgs-wpp/static/css/main.c59cc657.css",
+    "main.js": "/send-msgs-wpp/static/js/main.9605e9f6.js",
+    "index.html": "/send-msgs-wpp/index.html",
+    "static/media/arrowDown.svg": "/send-msgs-wpp/static/media/arrowDown.f3f3f91935a2e98a463612fbffa30cdd.svg",
+    "main.c59cc657.css.map": "/send-msgs-wpp/static/css/main.c59cc657.css.map",
+    "main.9605e9f6.js.map": "/send-msgs-wpp/static/js/main.9605e9f6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c59cc657.css",
+    "static/js/main.9605e9f6.js"
+  ]
+}
