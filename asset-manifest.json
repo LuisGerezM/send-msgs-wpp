@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/send-msgs-wpp/static/css/main.c59cc657.css",
-    "main.js": "/send-msgs-wpp/static/js/main.16d44cf3.js",
+    "main.css": "/send-msgs-wpp/static/css/main.a12a4c06.css",
+    "main.js": "/send-msgs-wpp/static/js/main.d4d8185a.js",
     "index.html": "/send-msgs-wpp/index.html",
     "static/media/arrowDown.svg": "/send-msgs-wpp/static/media/arrowDown.f3f3f91935a2e98a463612fbffa30cdd.svg",
-    "main.c59cc657.css.map": "/send-msgs-wpp/static/css/main.c59cc657.css.map",
-    "main.16d44cf3.js.map": "/send-msgs-wpp/static/js/main.16d44cf3.js.map"
+    "main.a12a4c06.css.map": "/send-msgs-wpp/static/css/main.a12a4c06.css.map",
+    "main.d4d8185a.js.map": "/send-msgs-wpp/static/js/main.d4d8185a.js.map"
   },
   "entrypoints": [
-    "static/css/main.c59cc657.css",
-    "static/js/main.16d44cf3.js"
+    "static/css/main.a12a4c06.css",
+    "static/js/main.d4d8185a.js"
   ]
 }
