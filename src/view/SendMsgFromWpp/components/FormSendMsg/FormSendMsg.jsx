@@ -8,6 +8,7 @@ import { urlMessageToWpp } from "view/SendMsgFromWpp/utilities/urlMessageToWpp.u
 import { AlertMessageToSend } from "../AlertMessageToSend/AlertMessageToSend";
 import AnchorWpp from "../AnchorWpp/AnchorWpp";
 import { CheckField } from "../CheckField/CheckField";
+import { DateInput } from "../DateInput/DateInput";
 import { FormGroup } from "../FormGroup/FormGroup";
 import { InputField } from "../InputField/InputField";
 import { SelectField } from "../SelectField/SelectField";
@@ -24,6 +25,9 @@ export const FormSendMsg = () => {
     doYouHaveAppWpp,
     patientNumber,
     wppBtn,
+    daySelected,
+    dateEvent,
+    handleSetDateEvent,
   } = useFormSendMsg();
 
   return (
@@ -34,6 +38,12 @@ export const FormSendMsg = () => {
       >
         <FormGroup groupClass="col col-12 my-3">
           <SelectField {...fields.selectField} validation={validationFields} />
+          <DateInput
+            daySelected={daySelected}
+            dateEvent={dateEvent}
+            handleSetDateEvent={handleSetDateEvent}
+          />
+
           {fields.inputsFields &&
             fields.inputsFields.map((field) => (
               <Form.Group key={field.name} className="my-3">
