@@ -1,9 +1,12 @@
 import { Form } from "react-bootstrap";
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { fadeIn } from "styled-components/animation.styled";
 import { inputTextCssStyle } from "styled-components/App.styled";
 import { themeColors } from "styled-components/Theme.styled";
 import arrowDown from "assets/arrowDown.svg";
+
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
 
 const FormCheck = styled(Form.Check)`
   ${inputTextCssStyle}
@@ -14,6 +17,11 @@ const FormCheck = styled(Form.Check)`
   transition: 0.5s;
 
   ${fadeIn}
+`;
+
+const focus = css`
+  color: ${themeColors.primaryColor};
+  background-color: ${themeColors.background};
 `;
 
 const FormInput = styled(Form.Control)`
@@ -29,8 +37,7 @@ const FormInput = styled(Form.Control)`
   transition: 0.5s;
 
   &:focus {
-    color: ${themeColors.primaryColor};
-    background-color: ${themeColors.background};
+    ${focus}
   }
 
   &:disabled {
@@ -38,6 +45,25 @@ const FormInput = styled(Form.Control)`
     background-color: ${themeColors.blackShadow};
     outline: ${themeColors.borderTheme} !important;
     cursor: not-allowed;
+  }
+
+  ${fadeIn}
+`;
+
+const DateInputForm = styled(DatePicker)`
+  width: 100%;
+  margin-bottom: 0.25rem;
+  ${inputTextCssStyle}
+  color: ${themeColors.primaryColor};
+  background: ${themeColors.background};
+  outline: 1px solid ${themeColors.secondaryColor} !important;
+  padding: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.5s;
+
+  &:focus {
+    ${focus}
   }
 
   ${fadeIn}
@@ -59,4 +85,4 @@ const FormSelect = styled(Form.Select)`
   ${fadeIn}
 `;
 
-export { FormCheck, FormInput, FormSelect };
+export { FormCheck, FormInput, FormSelect, DateInputForm };

@@ -1,4 +1,6 @@
-export const preparingMsgToSend = (partsOfMessage) => {
+export const preparingMsgToSend = (partsOfMessage, dateEvent) => {
+  const nextDay = new Date(dateEvent).toLocaleString().split(",");
+
   const emisor = partsOfMessage[0];
 
   const nameAndNumPatient = partsOfMessage[1].split("-");
@@ -7,7 +9,10 @@ export const preparingMsgToSend = (partsOfMessage) => {
 
   const messageBody = partsOfMessage[2];
   const greetingSelected = partsOfMessage[3];
-  const message = `${greetingSelected} ${namePatient}, ${messageBody} ${emisor}`;
+  const message = `${greetingSelected} ${namePatient}, ${messageBody.replace(
+    "-date-",
+    nextDay[0]
+  )} ${emisor}`;
 
   return { message, numPatient };
 };
