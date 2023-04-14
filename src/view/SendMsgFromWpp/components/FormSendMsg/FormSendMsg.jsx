@@ -57,7 +57,6 @@ export const FormSendMsg = () => {
 
         <CustomtButton buttonClass="col col-6" text="Enviar" type="submit" />
       </Form>
-      {console.log({ doYouHaveAppWpp, patientNumber, msgToSend }, urlMessageToWpp(doYouHaveAppWpp, patientNumber, msgToSend))}
       <AnchorWpp url={urlMessageToWpp(doYouHaveAppWpp, patientNumber, msgToSend)} ref={wppBtn} />
     </FormProvider>
   );

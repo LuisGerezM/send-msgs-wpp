@@ -4,11 +4,11 @@ const dayMessages = {
   monday: MONDAY,
   tuesday: TUESDAY,
   wednesday: WEDNESDAY,
-  ELECTIONS: `¡Hola a todos mis pacientes de Fernández Oro! Soy el Dr. Gerez Walter, su médico de confianza,  quiero compartirles una gran noticia: estoy *postulándome como concejal en nuestra ciudad*. Como médico, he aprendido la importancia de la *escucha activa* y la *empatía*, habilidades que estoy comprometido a llevar a la política. Quiero conocer sus *inquietudes, ideas y anhelos* para nuestra ciudad, porque unidos podemos hacer grandes cosas.
+  ELECTIONS: `Soy el Dr. Gerez Walter, su médico de confianza, quiero compartirle una gran noticia: estoy *postulándome como concejal en nuestra ciudad*. Como médico, he aprendido la importancia de la *escucha activa* y la *empatía*, habilidades que estoy comprometido a llevar a la política. Quiero conocer su *inquietudes, ideas y anhelos* para nuestra ciudad, porque unidos podemos hacer grandes cosas.
 
-  Estoy postulándome como concejal en la *LISTA 429, "Cambia Fernandez Oro", acompañando al Intendente Sr. Laje Marcelo y Presidente de Consejo Sra. Herrera Gabriela*. Si me conocen como su médico de confianza, saben que siempre he trabajado por *su bienestar* y ahora quiero seguir haciéndolo desde una nueva posición. Con mi visión fresca y comprometida, podemos lograr grandes cosas unidos para *construir* una ciudad más *próspera* y *segura* para todos.
+  Estoy postulándome como concejal en la *LISTA 429, "Cambia Fernandez Oro", acompañando al Intendente Sr. Laje Marcelo y Presidente de Consejo Sra. Herrera Gabriela*. Si me conocen como su médico de confianza, sabe que siempre he trabajado por *su bienestar* y ahora quiero seguir haciéndolo desde una nueva posición. Con mi visión fresca y comprometida, podemos lograr grandes cosas unidos para *construir* una ciudad más *próspera* y *segura* para todos.
 
-  Por eso, los invito a votar por *Cambia Fernández Oro, Lista 429*. Unidos podemos hacer la diferencia y lograr una ciudad en la que todos tengamos la oportunidad de crecer y prosperar. Recuerden, ustedes me proporcionaron su número de teléfono y ahora *los invito* a unirse a mi equipo. ¡*Unidos* podemos hacer que nuestra ciudad sea un lugar mejor para vivir! 
+  Por eso, le invito a votar por *Cambia Fernández Oro, Lista 429*. Unidos podemos hacer la diferencia y lograr una ciudad en la que todos tengamos la oportunidad de crecer y prosperar. Recuerde, usted me proporcionó su número de teléfono y ahora *le invito* a unirse a mi equipo. ¡*Unidos* podemos hacer que nuestra ciudad sea un lugar mejor para vivir! 
   `,
 };
 

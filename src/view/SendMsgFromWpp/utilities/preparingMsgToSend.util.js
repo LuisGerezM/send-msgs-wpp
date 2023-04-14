@@ -11,7 +11,7 @@ export const preparingMsgToSend = (partsOfMessage, dateEvent) => {
   const greetingSelected = partsOfMessage[3];
   // const message = `${greetingSelected} ${namePatient}, ${messageBody.replace("-date-", nextDay[0])} ${emisor}`;
 
-  const message = messageBody;
+  const message = `Hola ${namePatient}. ${messageBody}`;
 
   return { message, numPatient };
 };
