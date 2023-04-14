@@ -48,7 +48,7 @@ export const useFormSendMsg = () => {
 
   const onSubmit = async (data) => {
     setDoYouHaveAppWpp(data.doHaveApp);
-    // setValue("dataPatient", "");
+    setValue("dataPatient", "");
 
     setClickSubmit(true);
   };
