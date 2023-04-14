@@ -32,17 +32,14 @@ export const FormSendMsg = () => {
 
   return (
     <FormProvider {...{ register, errors, watch }}>
-      <Form
-        className="col col-12 col-sm-8 d-flex flex-column align-items-center justify-content-center"
-        onSubmit={handleSubmit(onSubmit)}
-      >
+      <Form className="col col-12 col-sm-8 d-flex flex-column align-items-center justify-content-center" onSubmit={handleSubmit(onSubmit)}>
         <FormGroup groupClass="col col-12 my-3">
-          <SelectField {...fields.selectField} validation={validationFields} />
+          {/* <SelectField {...fields.selectField} validation={validationFields} />
           <DateInput
             daySelected={daySelected}
             dateEvent={dateEvent}
             handleSetDateEvent={handleSetDateEvent}
-          />
+          /> */}
 
           {fields.inputsFields &&
             fields.inputsFields.map((field) => (
@@ -52,26 +49,16 @@ export const FormSendMsg = () => {
             ))}
         </FormGroup>
 
-        <AlertMessageToSend
-          openMsgToSend={openMsgToSend}
-          msgToSend={msgToSend}
-        />
+        <AlertMessageToSend openMsgToSend={openMsgToSend} msgToSend={msgToSend} />
 
         <FormGroup className="mb-3">
-          <CheckField
-            type={fields.checkBox.type}
-            label={fields.checkBox.label}
-            name={fields.checkBox.name}
-          />
+          <CheckField type={fields.checkBox.type} label={fields.checkBox.label} name={fields.checkBox.name} />
         </FormGroup>
 
         <CustomtButton buttonClass="col col-6" text="Enviar" type="submit" />
       </Form>
-
-      <AnchorWpp
-        url={urlMessageToWpp(doYouHaveAppWpp, patientNumber, msgToSend)}
-        ref={wppBtn}
-      />
+      {console.log({ doYouHaveAppWpp, patientNumber, msgToSend }, urlMessageToWpp(doYouHaveAppWpp, patientNumber, msgToSend))}
+      <AnchorWpp url={urlMessageToWpp(doYouHaveAppWpp, patientNumber, msgToSend)} ref={wppBtn} />
     </FormProvider>
   );
 };

@@ -9,6 +9,7 @@ const dayNumber = {
   monday: 1,
   tuesday: 2,
   wednesday: 3,
+  ELECTIONS: 4,
 };
 
 export const useFormSendMsg = () => {
@@ -34,7 +35,8 @@ export const useFormSendMsg = () => {
     formState: { errors },
   } = useForm({
     defaultValues: {
-      dataEmisor: "Consultorio de Flebología",
+      // dataEmisor: "Consultorio de Flebología",
+      dataEmisor: "",
       dataPatient: "",
       msgBody: "",
       greeting: "",
@@ -46,7 +48,7 @@ export const useFormSendMsg = () => {
 
   const onSubmit = async (data) => {
     setDoYouHaveAppWpp(data.doHaveApp);
-    setValue("dataPatient", "");
+    // setValue("dataPatient", "");
 
     setClickSubmit(true);
   };
@@ -67,19 +69,16 @@ export const useFormSendMsg = () => {
   const dataToInterest = watch(["dataPatient", "greeting"]);
 
   useEffect(() => {
-    if (dataPatientPattern.test(dataToInterest[0]) && dataToInterest[1]) {
-      const values = getValues([
-        "dataEmisor",
-        "dataPatient",
-        "msgBody",
-        "greeting",
-      ]);
+    // if (dataPatientPattern.test(dataToInterest[0]) && dataToInterest[1]) {
+    if (dataPatientPattern.test(dataToInterest[0])) {
+      const values = getValues(["dataEmisor", "dataPatient", "msgBody", "greeting"]);
 
       const { numPatient, message } = preparingMsgToSend(values, dateEvent);
 
       setPatientNumber("+549" + numPatient);
       setMsgToSend(message);
-    } else if (dataToInterest[0] === "" || dataToInterest[1] === "") {
+      // } else if (dataToInterest[0] === "" || dataToInterest[1] === "") {
+    } else if (dataToInterest[0] === "") {
       setOpenMsgToSend(false);
       setMsgToSend("");
     }
