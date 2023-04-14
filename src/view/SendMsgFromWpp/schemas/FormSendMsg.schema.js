@@ -8,7 +8,7 @@ const dayMessages = {
 
   Estoy postulándome como concejal en la *LISTA 429, "Cambia Fernandez Oro", acompañando al Intendente Sr. Laje Marcelo y Presidente de Consejo Sra. Herrera Gabriela*. Si me conocen como su médico de confianza, sabe que siempre he trabajado por *su bienestar* y ahora quiero seguir haciéndolo desde una nueva posición. Con mi visión fresca y comprometida, podemos lograr grandes cosas unidos para *construir* una ciudad más *próspera* y *segura* para todos.
 
-  Por eso, le invito a votar por *Cambia Fernández Oro, Lista 429*. Unidos podemos hacer la diferencia y lograr una ciudad en la que todos tengamos la oportunidad de crecer y prosperar. Recuerde, usted me proporcionaron su número de teléfono y ahora *le invito* a unirse a mi equipo. ¡*Unidos* podemos hacer que nuestra ciudad sea un lugar mejor para vivir! 
+  Por eso, le invito a votar por *Cambia Fernández Oro, Lista 429*. Unidos podemos hacer la diferencia y lograr una ciudad en la que todos tengamos la oportunidad de crecer y prosperar. Recuerde, usted me proporcionó su número de teléfono y ahora *le invito* a unirse a mi equipo. ¡*Unidos* podemos hacer que nuestra ciudad sea un lugar mejor para vivir! 
   `,
 };
 
