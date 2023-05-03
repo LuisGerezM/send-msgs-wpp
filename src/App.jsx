@@ -17,7 +17,10 @@ function App() {
           <Route element={<SendMsgFromWpp />}>
             <Route path={publicRoute.DAY} element={<FormSendMsg />} />
           </Route>
-          <Route path="*" element={<Navigate to={publicRoute.SENDMESSAGE + "monday"} />} />
+          <Route
+            path="*"
+            element={<Navigate to={publicRoute.SENDMESSAGE + "monday"} />}
+          />
         </Routes>
       </Animate>
     </HashRouter>
