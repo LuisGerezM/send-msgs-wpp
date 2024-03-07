@@ -2,12 +2,14 @@ const {
   REACT_APP_MONDAY: MONDAY,
   REACT_APP_TUESDAY: TUESDAY,
   REACT_APP_WEDNESDAY: WEDNESDAY,
+  REACT_APP_THURSDAY: THURSDAY,
 } = process.env;
 
 const dayMessages = {
   monday: MONDAY,
   tuesday: TUESDAY,
   wednesday: WEDNESDAY,
+  thursday: THURSDAY
 };
 
 const fields = {
