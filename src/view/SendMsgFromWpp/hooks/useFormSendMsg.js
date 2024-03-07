@@ -9,6 +9,7 @@ const dayNumber = {
   monday: 1,
   tuesday: 2,
   wednesday: 3,
+  thursday: 4
 };
 
 export const useFormSendMsg = () => {
@@ -24,6 +25,7 @@ export const useFormSendMsg = () => {
   const wppBtn = createRef();
 
   const daySelected = dayNumber[day];
+
 
   const {
     register,
